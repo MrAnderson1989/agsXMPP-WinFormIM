@@ -1,0 +1,7 @@
+#c#
+bin/
+obj/
+*.suo
+*.user
+*.htm
+*.idc

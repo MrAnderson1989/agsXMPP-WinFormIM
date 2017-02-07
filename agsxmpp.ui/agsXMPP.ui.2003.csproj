@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>7.10.3077</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93F68E40-C0FC-4B7F-8331-8EEB95A5E3DF}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon />
+    <AssemblyKeyContainerName />
+    <AssemblyName>agsXMPP.ui</AssemblyName>
+    <AssemblyOriginatorKeyFile />
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>agsXMPP.ui</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>0.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Net11\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>DEBUG;TRACE;VS2003</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Net11\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile />
+    <DefineConstants>TRACE;VS2003</DefineConstants>
+    <DocumentationFile />
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn />
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\agsxmpp\agsXMPP2003.csproj">
+      <Name>agsXMPP2003</Name>
+      <Project>{DC39021C-FA24-4E34-AB4A-3260BB5314AF}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="xdata\Base\XDataFieldControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="xdata\XDataCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="xdata\XDataControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="xdata\XDataHidden.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="xdata\XDataJidMulti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="xdata\XDataJidSingle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="xdata\XDataLabel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="xdata\XDataListItem.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="xdata\XDataListMulti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="xdata\XDataListSingle.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="xdata\XDataTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <EmbeddedResource Include="xdata\Base\XDataFieldControl.resx">
+      <DependentUpon>XDataFieldControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xdata\XDataCheckBox.resx">
+      <DependentUpon>XDataCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xdata\XDataControl.resx">
+      <DependentUpon>XDataControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xdata\XDataHidden.resx">
+      <DependentUpon>XDataHidden.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xdata\XDataJidMulti.resx">
+      <DependentUpon>XDataJidMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xdata\XDataJidSingle.resx">
+      <DependentUpon>XDataJidSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xdata\XDataLabel.resx">
+      <DependentUpon>XDataLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xdata\XDataListMulti.resx">
+      <DependentUpon>XDataListMulti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xdata\XDataListSingle.resx">
+      <DependentUpon>XDataListSingle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="xdata\XDataTextBox.resx">
+      <DependentUpon>XDataTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent />
+    <PostBuildEvent />
+  </PropertyGroup>
+</Project>

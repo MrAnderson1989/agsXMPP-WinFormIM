@@ -1,0 +1,10 @@
+<Settings>
+   <Login>
+      <Jid>rainy</Jid>
+      <Password>li123123</Password>
+      <Resource>MiniClient</Resource>
+      <Priority>10</Priority>
+      <Port>5223</Port>
+      <Ssl>true</Ssl>
+   </Login>
+</Settings>
